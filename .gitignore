@@ -1,0 +1,7 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Image working backups / regeneration scratch (not needed to render the site)
+images/lux/old/
+images/lux/old2/

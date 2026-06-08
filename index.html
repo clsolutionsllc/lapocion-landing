@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Poción USA · Colombia's #1 Hair Ritual | Repair · Strength · Growth</title>
+<meta name="description" content="The cult Colombian hair rituals: deep repair, ancestral plant strength, mirror shine and visibly fuller, stronger hair. Now shipping across the USA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --magenta:#FF1E83; --magenta2:#E6007E; --magenta-deep:#B80062;
+  --coral:#FF6A3D; --plum:#3B0A52; --grape:#2A0B3D; --purple:#7A1FA2;
+  --gold:#E8B86D; --gold-deep:#C99A4E; --gold-soft:#F4D9A8;
+  --ink:#2A0B3D; --cream:#FFF7FB; --blush:#FBE7F1; --white:#fff;
+  --shadow:0 22px 60px rgba(59,10,82,.22);
+  --shadow-sm:0 10px 30px rgba(42,11,61,.14);
+  --r:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Hanken Grotesk',system-ui,sans-serif;color:var(--ink);background:var(--cream);
+  overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1200px,92vw);margin-inline:auto}
+.serif{font-family:'Fraunces',serif}
+.script{font-family:'Caveat',cursive}
+h1,h2,h3{font-family:'Fraunces',serif;letter-spacing:-.01em}
+
+/* gold hairline divider */
+.goldline{height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border:0}
+
+/* ---------- MARQUEE ---------- */
+.marquee{background:var(--grape);color:#fff;overflow:hidden;white-space:nowrap;font-weight:700;
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;padding:10px 0;position:relative;z-index:60}
+.marquee span{display:inline-block;padding-inline:1.6rem;animation:scroll 30s linear infinite}
+.marquee b{color:var(--gold)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- HEADER ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(255,247,251,.9);backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(201,154,78,.3)}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-family:'Fraunces',serif;font-weight:800;font-size:1.7rem;letter-spacing:.01em;color:var(--magenta-deep)}
+.logo span{color:var(--gold-deep)}
+.logo small{display:block;font-family:'Hanken Grotesk';font-weight:700;font-size:.5rem;letter-spacing:.46em;
+  color:var(--purple);margin-top:-2px;text-transform:uppercase}
+.nav{display:flex;gap:1.5rem;font-weight:600;font-size:.94rem;align-items:center}
+.nav a:hover{color:var(--magenta)}
+.nav-cta{background:var(--grape);color:#fff!important;padding:11px 22px;border-radius:100px;font-size:.85rem;
+  font-weight:700;box-shadow:var(--shadow-sm);transition:.2s;border:1px solid var(--gold)}
+.nav-cta:hover{transform:translateY(-2px);background:var(--magenta-deep)}
+@media(max-width:780px){.nav a:not(.nav-cta){display:none}}
+
+/* ---------- BUTTONS ---------- */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;cursor:pointer;border:none;
+  font-family:'Hanken Grotesk';transition:transform .18s cubic-bezier(.2,1.4,.4,1),box-shadow .2s,background .2s;
+  text-transform:uppercase;letter-spacing:.03em}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(0)}
+.btn.buy{background:linear-gradient(100deg,var(--magenta),var(--coral));color:#fff;padding:17px 30px;
+  border-radius:100px;font-size:1.02rem;box-shadow:0 14px 32px rgba(255,30,131,.4);width:100%;justify-content:center}
+.btn.buy:hover{box-shadow:0 20px 44px rgba(255,30,131,.55)}
+.btn.gold{background:linear-gradient(100deg,var(--gold),var(--gold-deep));color:var(--grape);padding:17px 34px;
+  border-radius:100px;font-size:1.02rem;box-shadow:0 14px 32px rgba(201,154,78,.45)}
+.btn.ghost{background:rgba(255,255,255,.55);color:var(--grape);border:1.5px solid var(--grape);padding:15px 28px;border-radius:100px}
+.btn.ghost:hover{background:var(--grape);color:#fff}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;
+  background:
+    radial-gradient(110% 78% at 50% -10%, rgba(232,184,109,.22), transparent 54%),
+    radial-gradient(80% 60% at 88% 112%, rgba(255,30,131,.08), transparent 60%),
+    linear-gradient(180deg,#FFFBF7 0%, #FFF4F8 48%, #FBE7F1 100%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(46% 38% at 16% 10%,rgba(232,184,109,.14),transparent 70%)}
+.hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;z-index:4;
+  background:linear-gradient(90deg,transparent,rgba(201,154,78,.5),transparent)}
+.hero-grid{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0;min-height:auto;padding:38px 0 10px}
+.hero-copy{position:relative;z-index:3;color:var(--ink);padding:6px 0 18px;max-width:780px;margin:0 auto}
+.hero-banner{position:relative;z-index:3;width:100%;max-width:980px;margin:14px auto 0;border-radius:26px;overflow:hidden;
+  border:1px solid rgba(201,154,78,.45);box-shadow:0 30px 70px rgba(184,0,98,.16),0 4px 16px rgba(42,11,61,.08)}
+.hero-banner img{display:block;width:100%;height:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.7);
+  border:1px solid var(--gold);padding:8px 18px;border-radius:100px;font-weight:800;
+  font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;backdrop-filter:blur(6px);color:var(--magenta-deep);
+  box-shadow:0 6px 18px rgba(184,0,98,.08)}
+.hero h1{font-weight:500;line-height:.98;margin:22px 0 0;font-size:clamp(2.7rem,6.4vw,5.1rem);color:var(--grape)}
+.hero h1 em{font-style:italic;color:var(--magenta-deep)}
+.hero .sub{font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;margin:22px auto 0;max-width:46ch;
+  line-height:1.5;color:#5a3a66}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;justify-content:center}
+.hero-rate{display:flex;align-items:center;justify-content:center;gap:13px;margin-top:26px;font-weight:700;color:var(--ink)}
+.stars{color:var(--gold-deep);font-size:1.1rem;letter-spacing:2px}
+.hero-rate small{display:block;font-weight:500;font-size:.78rem;opacity:.7}
+.hero-photo{position:relative;z-index:2;align-self:stretch;display:flex;align-items:flex-end;justify-content:center}
+.hero-photo .frame{position:relative;width:100%;max-width:560px;border-radius:28px;overflow:hidden;
+  border:2px solid rgba(244,217,168,.65);box-shadow:0 30px 70px rgba(59,10,82,.5);margin-bottom:30px;
+  aspect-ratio:4/5;background:#3b0a52}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-photo .cap{position:absolute;left:16px;bottom:16px;z-index:3;background:rgba(42,11,61,.72);
+  backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(244,217,168,.5);border-radius:100px;
+  padding:8px 16px;font-weight:700;font-size:.8rem}
+.hero .tab-results{position:absolute;right:0;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;
+  background:var(--grape);color:var(--gold-soft);font-family:'Fraunces';font-weight:700;letter-spacing:.16em;
+  padding:20px 10px;border-radius:0 0 12px 12px;font-size:.95rem;z-index:4;border-left:2px solid var(--gold)}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;min-height:auto;text-align:center}
+  .hero-cta,.hero-rate{justify-content:center}
+  .hero .sub{margin-inline:auto}
+  .hero-photo .frame{max-width:380px;margin-inline:auto;aspect-ratio:4/5}
+  .hero .tab-results{display:none}
+}
+
+/* ---------- FAMILY BANNER ---------- */
+.family{background:linear-gradient(180deg,var(--plum),var(--grape));color:#fff;padding:56px 0 60px;text-align:center}
+.family h2{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:500}
+.family h2 em{font-style:italic;color:var(--gold-soft)}
+.family p{opacity:.82;font-weight:500;margin:10px auto 26px;max-width:46ch}
+.family .shot{border-radius:var(--r);overflow:hidden;border:1px solid rgba(244,217,168,.4);box-shadow:var(--shadow)}
+.family .pills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.family .pills a{background:rgba(255,255,255,.08);border:1px solid rgba(244,217,168,.4);color:#fff;
+  padding:9px 18px;border-radius:100px;font-weight:700;font-size:.86rem;transition:.2s}
+.family .pills a:hover{background:var(--magenta);border-color:var(--magenta)}
+
+/* ---------- STAT STRIP ---------- */
+.stats{background:#fff;padding:34px 0;border-bottom:1px solid var(--blush)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:center}
+.stats .n{font-family:'Fraunces';font-weight:700;font-size:clamp(1.9rem,4.6vw,2.8rem);line-height:1;color:var(--magenta-deep)}
+.stats .l{font-weight:600;font-size:.84rem;color:#6b4a78;margin-top:5px}
+@media(max-width:620px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:26px 14px}}
+
+/* ---------- SECTION ---------- */
+.sec{padding:78px 0}
+.sec-head{text-align:center;max-width:44ch;margin:0 auto}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold-deep);font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;font-size:.74rem;margin-bottom:14px}
+.kicker::before,.kicker::after{content:"";width:26px;height:1px;background:var(--gold-deep);display:inline-block}
+.sec-head h2{font-size:clamp(2rem,5vw,3.4rem);line-height:1.02;font-weight:500}
+.sec-head h2 em{font-style:italic;color:var(--magenta)}
+.sec-head p{font-weight:500;font-size:1.06rem;margin-top:14px;color:#5a3a66}
+
+/* ---------- LISTICLE ---------- */
+.listicle{display:flex;flex-direction:column;gap:44px;margin-top:52px}
+.kit{display:grid;grid-template-columns:1fr 1.04fr;border-radius:var(--r);overflow:hidden;
+  box-shadow:var(--shadow);background:#fff;border:1px solid var(--blush);position:relative}
+.kit:nth-child(even){grid-template-columns:1.04fr 1fr}
+.kit:nth-child(even) .kit-media{order:2}
+.kit-media{position:relative;overflow:hidden;background:linear-gradient(165deg,var(--blush),#fff);display:flex;align-items:center;justify-content:center}
+.kit-media img{width:100%;height:auto;display:block}
+.kit-badge{position:absolute;top:22px;right:22px;z-index:3;background:linear-gradient(100deg,var(--gold),var(--gold-deep));
+  color:var(--grape);font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:8px 15px;border-radius:100px;box-shadow:var(--shadow-sm)}
+.kit-body{padding:40px 40px 42px;display:flex;flex-direction:column}
+.kit-tagline{font-family:'Caveat';font-size:1.55rem;color:var(--magenta);font-weight:700;line-height:1}
+.kit-body h3{font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1;margin:6px 0 4px;font-weight:600;color:var(--ink)}
+.kit-es{font-weight:600;color:var(--gold-deep);font-size:.92rem;letter-spacing:.02em;margin-bottom:8px}
+.kit-rate{display:flex;align-items:center;gap:9px;font-weight:600;font-size:.9rem;color:#6b4a78}
+.kit-desc{font-weight:500;color:#523660;margin:14px 0 16px;line-height:1.55}
+.benefits{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:18px}
+.benefits li{display:flex;gap:11px;font-weight:500;align-items:flex-start;line-height:1.4;color:#3f2a4a}
+.benefits li b{font-weight:800;color:var(--ink)}
+.benefits .ic{flex:none;width:24px;height:24px;border-radius:50%;background:var(--gold-soft);color:var(--gold-deep);
+  display:grid;place-items:center;font-weight:900;font-size:.8rem;margin-top:1px;border:1px solid var(--gold)}
+.includes{background:var(--cream);border:1px solid var(--blush);border-radius:16px;padding:14px 16px;margin-bottom:20px}
+.includes b{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
+.includes ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px 9px;margin-top:9px}
+.includes li{font-weight:700;font-size:.84rem;background:#fff;border:1px solid var(--blush);border-radius:100px;padding:5px 13px}
+.actives{margin:2px 0 18px}
+.actives b{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta-deep);display:block;margin-bottom:8px}
+.actives ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px 9px}
+.actives li{font-weight:700;font-size:.82rem;background:var(--blush);color:var(--magenta-deep);border:1px solid #f3cfe1;border-radius:100px;padding:5px 12px;display:inline-flex;align-items:center;gap:5px}
+.actives li::before{content:"🌿";font-size:.78rem}
+.freefrom{margin:0 0 20px}
+.freefrom b{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grape);display:block;margin-bottom:8px}
+.freefrom ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px 9px}
+.freefrom li{font-weight:700;font-size:.82rem;background:#fff;color:var(--grape);border:1px solid #e7d3ef;border-radius:100px;padding:5px 12px 5px 11px;display:inline-flex;align-items:center;gap:6px}
+.freefrom li::before{content:"✕";font-size:.66rem;font-weight:900;color:#b14fd0;line-height:1}
+.price-row{display:flex;align-items:baseline;gap:14px;margin:auto 0 16px;flex-wrap:wrap}
+.price{font-family:'Fraunces';font-weight:700;font-size:2.4rem;color:var(--ink);line-height:1}
+.price s{font-family:'Hanken Grotesk';font-size:1.05rem;color:#b08aa0;font-weight:500;margin-left:8px}
+.save{background:var(--blush);color:var(--magenta-deep);font-weight:800;padding:6px 13px;border-radius:100px;font-size:.8rem}
+.guarantee{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:12px;font-weight:500;font-size:.84rem;color:#6b4a78}
+@media(max-width:860px){
+  .kit,.kit:nth-child(even){grid-template-columns:1fr}
+  .kit:nth-child(even) .kit-media{order:0}
+  .kit-body{padding:30px 26px 34px}
+}
+
+/* ---------- SCIENCE ---------- */
+.potion{position:relative;color:#fff;overflow:hidden;background:var(--grape)}
+.potion::before{content:"";position:absolute;inset:0;background:url('images/ingredients.png') center/cover;opacity:.28}
+.potion::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(42,11,61,.94),rgba(122,31,162,.78))}
+.potion .wrap{position:relative;z-index:2;padding:84px 0}
+.potion h2{font-size:clamp(2rem,5vw,3.4rem);max-width:18ch;margin-bottom:18px;font-weight:500}
+.potion h2 em{font-style:italic;color:var(--gold-soft)}
+.potion .lead{font-weight:500;font-size:1.08rem;max-width:50ch;opacity:.95;margin-bottom:30px}
+.ingredients{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ing{position:relative;background:linear-gradient(165deg,rgba(255,255,255,.10),rgba(255,255,255,.035));border:1px solid rgba(244,217,168,.34);border-radius:20px;padding:26px 22px 24px;overflow:hidden;transition:transform .4s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .4s}
+.ing::before{content:"";position:absolute;top:0;left:24px;right:24px;height:1px;background:linear-gradient(90deg,transparent,rgba(232,184,109,.85),transparent)}
+.ing:hover{transform:translateY(-6px);border-color:rgba(244,217,168,.6);box-shadow:0 22px 50px rgba(0,0,0,.3)}
+.ing .e{font-size:1.9rem;line-height:1;filter:drop-shadow(0 4px 10px rgba(0,0,0,.3))}
+.ing .lab{display:block;margin:16px 0 6px;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;font-weight:800;color:var(--gold-soft);opacity:.92}
+.ing h4{font-family:'Fraunces';font-weight:600;margin:0 0 9px;font-size:1.2rem;letter-spacing:.01em}
+.ing p{font-size:.9rem;opacity:.88;font-weight:500;line-height:1.55}
+.potion .note{margin-top:28px;font-size:.92rem;font-weight:500;letter-spacing:.01em;opacity:.82;max-width:54ch}
+.potion .note b{color:var(--gold-soft);font-weight:700}
+@media(max-width:720px){.ingredients{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- RESULTS ---------- */
+.results{background:var(--cream)}
+.results-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.results-photo{min-height:480px;background:url('images/curls.png') center/cover;position:relative}
+.results-photo .float{position:absolute;left:24px;bottom:24px;background:#fff;border-radius:16px;padding:14px 18px;
+  box-shadow:var(--shadow);border:1px solid var(--gold-soft)}
+.results-photo .float .n{font-family:'Fraunces';font-weight:700;font-size:1.9rem;color:var(--magenta)}
+.results-copy{padding:64px 58px}
+.results-copy h2{font-size:clamp(2rem,5vw,3.1rem);line-height:1.02;font-weight:500}
+.results-copy h2 em{font-style:italic;color:var(--magenta)}
+.results-copy p{font-weight:500;color:#523660;margin:16px 0;line-height:1.6;font-size:1.04rem}
+.timeline{list-style:none;display:flex;flex-direction:column;gap:13px;margin-top:6px}
+.timeline li{display:flex;gap:13px;align-items:flex-start;font-weight:500;color:#3f2a4a}
+.timeline b{background:var(--grape);color:var(--gold-soft);font-family:'Fraunces';font-weight:700;font-size:.76rem;
+  padding:6px 10px;border-radius:8px;flex:none}
+@media(max-width:820px){.results-grid{grid-template-columns:1fr}.results-photo{min-height:340px;order:2}.results-copy{padding:46px 24px}}
+
+/* ---------- COMPARE ---------- */
+.compare table{width:100%;border-collapse:separate;border-spacing:0;margin-top:30px;background:#fff;
+  border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);font-weight:600}
+.compare th,.compare td{padding:15px 14px;text-align:center;border-bottom:1px solid var(--blush)}
+.compare thead th{position:sticky;top:0;background:var(--grape);color:#fff;font-family:'Fraunces';font-weight:600;font-size:.94rem;z-index:2}
+.compare thead th.hl{background:var(--magenta-deep);color:var(--gold-soft)}
+.compare tbody td:first-child{text-align:left;font-weight:700;color:var(--ink)}
+.compare .yes{color:#15a06a;font-weight:900}.compare .no{color:#cf3a6b;font-weight:900}
+.compare tr:last-child td{border-bottom:none}
+.compare td.hl{background:var(--blush)}
+@media(max-width:680px){.compare{overflow-x:auto}.compare table{min-width:560px}}
+
+/* ---------- TESTIMONIALS ---------- */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+.tcard{background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--blush);display:flex;flex-direction:column}
+.tcard .stars{color:var(--gold-deep);margin-bottom:10px}
+.tcard p{font-weight:500;color:#3f2a4a;line-height:1.55;flex:1;font-size:1.02rem}
+.tcard .who{display:flex;align-items:center;gap:11px;margin-top:18px}
+.tcard .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--magenta),var(--coral));
+  color:#fff;display:grid;place-items:center;font-weight:800}
+.tcard .who b{display:block}.tcard .who small{color:#9a7a8a;font-weight:500}
+@media(max-width:780px){.testi-grid{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:780px;margin:38px auto 0}
+.faq details{background:#fff;border-radius:16px;padding:4px 24px;margin-bottom:12px;box-shadow:var(--shadow-sm);border:1px solid var(--blush)}
+.faq summary{font-weight:700;font-size:1.06rem;padding:19px 0;cursor:pointer;list-style:none;display:flex;
+  justify-content:space-between;align-items:center;color:var(--ink);font-family:'Fraunces'}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:'Fraunces';color:var(--gold-deep);font-size:1.6rem;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 19px;font-weight:500;color:#523660;line-height:1.6}
+
+/* ---------- FINAL ---------- */
+.final{background:radial-gradient(120% 130% at 50% 0%,var(--magenta) 0%,var(--magenta-deep) 55%,var(--plum) 100%);
+  color:#fff;text-align:center;padding:90px 0;position:relative;overflow:hidden}
+.final::after{content:"";position:absolute;inset:0;background:radial-gradient(40% 50% at 50% 10%,rgba(232,184,109,.25),transparent 70%);pointer-events:none}
+.final h2{font-size:clamp(2.2rem,5.6vw,4rem);line-height:1.02;font-weight:500;position:relative}
+.final h2 em{font-style:italic;color:var(--gold-soft)}
+.final p{font-weight:500;font-size:1.12rem;margin:18px auto 30px;max-width:46ch;opacity:.95;position:relative}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;font-size:.9rem}
+.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px;margin-bottom:26px}
+.foot-grid .logo{color:#fff}.foot-grid .logo span{color:var(--gold)}
+.foot-col h5{color:#fff;font-weight:800;margin-bottom:11px;letter-spacing:.04em}
+.foot-col a{display:block;margin-bottom:7px}.foot-col a:hover{color:var(--gold-soft)}
+.disclaimer{border-top:1px solid rgba(244,217,168,.22);padding-top:18px;margin-top:4px;font-size:.74rem;
+  line-height:1.6;opacity:.6;max-width:90ch}
+.foot-bottom{padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem}
+
+/* ---------- MOBILE BUY BAR ---------- */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;box-shadow:0 -8px 30px rgba(42,11,61,.16);
+  display:none;align-items:center;justify-content:space-between;gap:12px;padding:11px 16px;border-top:1px solid var(--gold-soft);
+  transform:translateY(120%);transition:transform .35s cubic-bezier(.2,1,.3,1)}
+.mbar.show{transform:translateY(0)}
+.mbar .mp{font-family:'Fraunces';font-weight:700;font-size:1.2rem;color:var(--ink);line-height:1}
+.mbar .mp small{display:block;font-family:'Hanken Grotesk';font-weight:600;font-size:.66rem;color:#9a7a8a;text-transform:uppercase;letter-spacing:.08em}
+.mbar .btn.buy{width:auto;padding:14px 22px;font-size:.92rem}
+@media(max-width:860px){.mbar{display:flex}body{padding-bottom:74px}}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.3,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <span>COLOMBIA'S #1 HAIR RITUAL &nbsp;·&nbsp; <b>NOW SHIPPING USA</b> &nbsp;·&nbsp; FREE SHIPPING OVER $50 &nbsp;·&nbsp; 30-DAY LOVE-IT GUARANTEE &nbsp;·&nbsp; COLOMBIA'S #1 HAIR RITUAL &nbsp;·&nbsp; <b>NOW SHIPPING USA</b> &nbsp;·&nbsp; FREE SHIPPING OVER $50 &nbsp;·&nbsp; 30-DAY LOVE-IT GUARANTEE &nbsp;·&nbsp;</span>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap bar">
+    <a href="#" class="logo">La Poción<span>∞</span><small>Hair Rituals · USA</small></a>
+    <nav class="nav">
+      <a href="#kits">The Rituals</a>
+      <a href="#science">Ingredients</a>
+      <a href="#results">Results</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kits" class="nav-cta">Shop Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="tab-results">Results</div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">🇨🇴 Made in Colombia · Shipped from the USA</span>
+      <h1>Your hair, like you: <em>spectacular.</em></h1>
+      <p class="sub">The cult Colombian ritual for deep repair, ancestral plant strength and visibly fuller, healthier-looking hair. No celebrities. Just real results.</p>
+      <div class="hero-cta">
+        <a href="#kits" class="btn gold">Shop the Rituals</a>
+        <a href="#science" class="btn ghost">The Ingredients</a>
+      </div>
+      <div class="hero-rate">
+        <span class="stars">★★★★★</span>
+        <div><b>4.8 / 5</b><small>from 12,000+ real reviews</small></div>
+      </div>
+    </div>
+    <div class="hero-banner">
+      <img src="images/lux/all-products.png?v=4" alt="The full La Poción collection on marble">
+    </div>
+  </div>
+</section>
+
+<!-- FAMILY BANNER -->
+<section class="family">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--gold-soft);justify-content:center">The Family</p>
+    <h2>The whole collection, <em>one ritual</em></h2>
+    <p>Five complete rituals for repair, strength &amp; growth, curls, shine, and kids. Tap your hair goal.</p>
+    <div class="pills">
+      <a href="#kit-5">Deep Repair</a>
+      <a href="#kit-4">Strength &amp; Growth</a>
+      <a href="#kit-t">Tongolé Curls</a>
+      <a href="#kit-b8">B8 Infinite Shine</a>
+      <a href="#kit-k">Kids Tangle-Free</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div><div class="n">93%</div><div class="l">noticed less breakage in 7 days*</div></div>
+    <div><div class="n">50K+</div><div class="l">manes transformed</div></div>
+    <div><div class="n">4.8★</div><div class="l">across 12,000+ reviews</div></div>
+    <div><div class="n">#1</div><div class="l">hair ritual in Colombia</div></div>
+  </div>
+</section>
+
+<!-- LISTICLE -->
+<section class="sec" id="kits">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Ranked best-sellers</p>
+      <h2>The rituals everyone is <em>obsessed</em> with</h2>
+      <p>Each kit is a complete salon ritual in a box, formulated in Colombia with ancestral plant actives. Start with our best-seller.</p>
+    </div>
+
+    <div class="listicle">
+
+      <!-- KIT 1 -->
+      <article class="kit reveal" id="kit-5">
+        <div class="kit-media"><div class="kit-badge">★ Best-Seller</div>
+          <img src="images/lux/kit-5piece.png" alt="5-Piece Deep Repair Ritual"></div>
+        <div class="kit-body">
+          <span class="kit-tagline">the complete ritual</span>
+          <h3>5-Piece Deep Repair</h3>
+          <div class="kit-es">Deep Repair Kit · Double Power</div>
+          <div class="kit-rate"><span class="stars">★★★★★</span> 4.9 · 3,100+ reviews</div>
+          <p class="kit-desc">Our hero. The complete reconstruction ritual that cleanses, masks, treats, styles and seals, rebuilding brittle, over-processed hair from the inside out. <em>Immediate reconstruction from within.</em></p>
+          <ul class="benefits">
+            <li><span class="ic">✓</span><span><b>Deep reconstruction</b> for bleached, heat-stressed hair, visibly stronger from the very first wash</span></li>
+            <li><span class="ic">✓</span><span><b>Less breakage = more length retained</b>, so hair looks fuller and grows out healthier*</span></li>
+            <li><span class="ic">✓</span><span><b>Mirror shine</b> from root to tip, salon results without the salon bill</span></li>
+          </ul>
+          <div class="actives"><b>Key actives</b><ul><li>Aloe Vera</li><li>Keratin</li><li>Shea Butter</li><li>Collagen</li><li>Biotin</li></ul></div>
+          <div class="freefrom"><b>Free from</b><ul><li>Sulfates</li><li>Parabens</li><li>Silicones</li><li>Salt (NaCl)</li><li>Mineral Oil</li></ul></div>
+          <div class="includes"><b>What's included</b><ul><li>Dual Cream</li><li>Hydra Shampoo</li><li>Treatment</li><li>Ancestral Mask</li><li>B8 Infinite Shine</li></ul></div>
+          <div class="price-row"><div class="price">$99.99<s>$129.99</s></div><span class="save">Save $30</span></div>
+          <button class="btn buy" data-kit="5-Piece Deep Repair Kit" data-price="99.99" data-id="B0DSGYPPD7">Add to Cart · $99.99</button>
+          <div class="guarantee">🛡️ 30-day love-it guarantee · Free shipping</div>
+        </div>
+      </article>
+
+      <!-- KIT 2 -->
+      <article class="kit reveal" id="kit-4">
+        <div class="kit-media"><div class="kit-badge">Strength &amp; Growth</div>
+          <img src="images/lux/kit-4piece.png" alt="4-Piece Strength & Growth Ritual"></div>
+        <div class="kit-body">
+          <span class="kit-tagline">strength &amp; growth</span>
+          <h3>4-Piece Strength &amp; Growth</h3>
+          <div class="kit-es">Strength &amp; Growth Kit · Anti-Fall</div>
+          <div class="kit-rate"><span class="stars">★★★★★</span> 4.8 · 2,400+ reviews</div>
+          <p class="kit-desc">The everyday powerhouse. A four-step ritual that strengthens the strand and reduces breakage, the #1 reason hair never seems to get longer. For hair that needs to grow out healthier and fuller.</p>
+          <ul class="benefits">
+            <li><span class="ic">✓</span><span><b>Strengthens &amp; fortifies</b> weak, snapping strands at the root</span></li>
+            <li><span class="ic">✓</span><span><b>Helps reduce breakage</b> so your length is retained and hair looks visibly fuller over time*</span></li>
+            <li><span class="ic">✓</span><span><b>Deep hydration</b> that lasts, wash after wash</span></li>
+          </ul>
+          <div class="actives"><b>Key actives</b><ul><li>Aloe Vera</li><li>Keratin</li><li>Shea Butter</li><li>Collagen</li><li>Biotin</li></ul></div>
+          <div class="freefrom"><b>Free from</b><ul><li>Sulfates</li><li>Parabens</li><li>Silicones</li><li>Salt (NaCl)</li><li>Mineral Oil</li></ul></div>
+          <div class="includes"><b>What's included</b><ul><li>Dual Cream</li><li>Hydra Shampoo</li><li>Treatment</li><li>Ancestral Mask</li></ul></div>
+          <div class="price-row"><div class="price">$74.99<s>$94.99</s></div><span class="save">Save $20</span></div>
+          <button class="btn buy" data-kit="4-Piece Strength & Growth Kit" data-price="74.99" data-id="B0DCYQV7XJ">Add to Cart · $74.99</button>
+          <div class="guarantee">🛡️ 30-day love-it guarantee · Free shipping</div>
+        </div>
+      </article>
+
+      <!-- KIT 3 -->
+      <article class="kit reveal" id="kit-t">
+        <div class="kit-media"><div class="kit-badge">Curls' Best Friend</div>
+          <img src="images/lux/kit-tongole.png" alt="Tongolé Curl Reconstruction Ritual"></div>
+        <div class="kit-body">
+          <span class="kit-tagline">for defined curls</span>
+          <h3>Tongolé Curl Ritual</h3>
+          <div class="kit-es">Curl Reconstruction Kit</div>
+          <div class="kit-rate"><span class="stars">★★★★★</span> 4.8 · 1,900+ reviews</div>
+          <p class="kit-desc">Made for curls, coils &amp; waves. The Tongolé ritual deeply hydrates, reconstructs and defines, for bouncy, springy curls that hold their shape and shine all day.</p>
+          <ul class="benefits">
+            <li><span class="ic">✓</span><span><b>Defines every curl</b> without crunch, grease or buildup</span></li>
+            <li><span class="ic">✓</span><span><b>Tames frizz &amp; flyaways</b>, even in humidity</span></li>
+            <li><span class="ic">✓</span><span><b>Reconstructs &amp; hydrates</b> thirsty, fragile coils</span></li>
+          </ul>
+          <div class="actives"><b>Key actives</b><ul><li>Coconut Oil</li><li>Avocado Oil</li><li>Olive Oil</li><li>Macadamia Oil</li></ul></div>
+          <div class="freefrom"><b>Free from</b><ul><li>Sulfates</li><li>Parabens</li><li>Silicones</li><li>Salt (NaCl)</li><li>Drying Alcohols</li></ul></div>
+          <div class="includes"><b>What's included</b><ul><li>Tongolé Shampoo</li><li>Tongolé Mask</li><li>Curl Cream</li><li>Leave-In</li></ul></div>
+          <div class="price-row"><div class="price">$74.99<s>$94.99</s></div><span class="save">Save $20</span></div>
+          <button class="btn buy" data-kit="Tongolé Curl Ritual" data-price="74.99" data-id="B0DCZ1SLJK">Add to Cart · $74.99</button>
+          <div class="guarantee">🛡️ 30-day love-it guarantee · Free shipping</div>
+        </div>
+      </article>
+
+      <!-- KIT 4 -->
+      <article class="kit reveal" id="kit-b8">
+        <div class="kit-media"><div class="kit-badge">Glass-Hair Glow</div>
+          <img src="images/lux/kit-b8.png" alt="B8 Infinite Shine Ritual"></div>
+        <div class="kit-body">
+          <span class="kit-tagline">infinite shine</span>
+          <h3>B8 Infinite Shine</h3>
+          <div class="kit-es">B8 Infinite Shine · Heat Protect</div>
+          <div class="kit-rate"><span class="stars">★★★★★</span> 4.7 · 1,500+ reviews</div>
+          <p class="kit-desc">The shine obsession. B8's lightweight serum and treatment wraps every strand in glass-like gloss and shields it from heat. <em>Power, energy, movement.</em></p>
+          <ul class="benefits">
+            <li><span class="ic">✓</span><span><b>Instant glass-hair shine</b> in a single application</span></li>
+            <li><span class="ic">✓</span><span><b>Heat protection</b> up to 450°F, so you can style without the damage</span></li>
+            <li><span class="ic">✓</span><span><b>Featherlight finish</b> that is never oily and never flat</span></li>
+          </ul>
+          <div class="actives"><b>Key actives</b><ul><li>Castor Oil</li><li>Camellia Oil</li><li>Green Tea</li><li>Cacay Oil</li><li>Babassu</li></ul></div>
+          <div class="freefrom"><b>Free from</b><ul><li>Sulfates</li><li>Parabens</li><li>Silicones</li><li>Mineral Oil</li><li>Synthetic Dyes</li></ul></div>
+          <div class="includes"><b>What's included</b><ul><li>B8 Multi-Oil</li><li>B8 Heat Protector</li></ul></div>
+          <div class="price-row"><div class="price">$49.99<s>$64.99</s></div><span class="save">Save $15</span></div>
+          <button class="btn buy" data-kit="B8 Infinite Shine Kit" data-price="49.99" data-id="B0DCZ64HBD">Add to Cart · $49.99</button>
+          <div class="guarantee">🛡️ 30-day love-it guarantee · Free shipping</div>
+        </div>
+      </article>
+
+      <!-- KIT 5 -->
+      <article class="kit reveal" id="kit-k">
+        <div class="kit-media"><div class="kit-badge">Tear-Free</div>
+          <img src="images/lux/kit-kids.png" alt="Kids Tangle-Free Ritual"></div>
+        <div class="kit-body">
+          <span class="kit-tagline">for the little ones</span>
+          <h3>Kids Tangle-Free</h3>
+          <div class="kit-es">Kids Tangle-Free Hair Care</div>
+          <div class="kit-rate"><span class="stars">★★★★★</span> 4.9 · 980+ reviews</div>
+          <p class="kit-desc">Bath time, but make it magic. Gentle, tear-free formulas that melt away knots so combing is finally drama-free, with a scent kids actually love.</p>
+          <ul class="benefits">
+            <li><span class="ic">✓</span><span><b>Detangles instantly</b>, with no more tears or tugging</span></li>
+            <li><span class="ic">✓</span><span><b>Tear-free &amp; gentle</b> on sensitive scalps</span></li>
+            <li><span class="ic">✓</span><span><b>Clean, kid-safe ingredients</b> parents trust</span></li>
+          </ul>
+          <div class="actives"><b>Key actives</b><ul><li>Coconut Milk</li><li>Aloe Vera</li><li>Jojoba Oil</li><li>Wheat Protein</li><li>Grape Extract</li></ul></div>
+          <div class="freefrom"><b>Free from</b><ul><li>Sulfates</li><li>Parabens</li><li>Salt (NaCl)</li><li>Synthetic Dyes</li><li>Harsh Detergents</li></ul></div>
+          <div class="includes"><b>What's included</b><ul><li>Kids Shampoo</li><li>Kids Conditioner</li><li>Tangle-Free Spray</li></ul></div>
+          <div class="price-row"><div class="price">$49.99<s>$64.99</s></div><span class="save">Save $15</span></div>
+          <button class="btn buy" data-kit="Kids Tangle-Free Kit" data-price="49.99" data-id="B0FV7VB3TW">Add to Cart · $49.99</button>
+          <div class="guarantee">🛡️ 30-day love-it guarantee · Free shipping</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE -->
+<section class="potion" id="science">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--gold-soft)">The Formula</p>
+    <h2>Ancestral plants. <em>Modern science.</em></h2>
+    <p class="lead">Every La Poción ritual begins with the Colombian botanicals our abuelas trusted for generations, then refines them with cosmetic-grade actives the modern strand actually needs. There are no sulfates that strip your color, no silicones that smother the cuticle, and nothing that promises more than it delivers. Just a considered blend of ingredients chosen to strengthen, to hydrate, and to bring hair back to its healthiest self.</p>
+    <div class="ingredients">
+      <div class="ing reveal"><div class="e">🧬</div><span class="lab">Repair</span><h4>Keratin &amp; Collagen</h4><p>Two proteins that settle into the micro-fractures along every strand, rebuilding the strength, elasticity and resilience that heat and bleach quietly wear away.</p></div>
+      <div class="ing reveal"><div class="e">🌿</div><span class="lab">Nourish</span><h4>Aloe Vera &amp; Shea</h4><p>A calming pair that soothes the scalp and saturates dry, depleted lengths with moisture that holds, wash after wash after wash.</p></div>
+      <div class="ing reveal"><div class="e">🥥</div><span class="lab">Hydrate &amp; Seal</span><h4>Plant Oils</h4><p>Cold-pressed coconut, avocado, olive and macadamia oils that soften the strand, define the curl and seal the cuticle for a clean, mirror-like finish.</p></div>
+      <div class="ing reveal"><div class="e">✨</div><span class="lab">Shine &amp; Shield</span><h4>B8 Oil Complex</h4><p>A luminous blend of castor, camellia, green tea and cacay oils that wraps each strand in glass-like shine while guarding it against daily heat.</p></div>
+    </div>
+    <p class="note">Blended in Colombia in small, careful batches and brought to the United States by us, the exclusive distributor, so the bottle on your shelf is the same one trusted back home. <b>Cruelty-free. Sulfate-free. Silicone-free.</b></p>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results" id="results">
+  <div class="results-grid">
+    <div class="results-photo"><div class="float"><div class="n">7 days</div><div style="font-weight:700;color:var(--ink)">to visibly softer, stronger hair*</div></div></div>
+    <div class="results-copy">
+      <p class="kicker">Real results</p>
+      <h2>Stronger hair, <em>visible fast.</em></h2>
+      <p>No 12-week wait. La Poción works on contact and keeps building. Here's what the first month looks like for most people:</p>
+      <ul class="timeline">
+        <li><b>DAY 1</b><span>Instant slip &amp; shine. Detangles like butter, dries soft.</span></li>
+        <li><b>WK 1</b><span>93% report noticeably less breakage and frizz.*</span></li>
+        <li><b>WK 2-4</b><span>Stronger strands, more body, and hair that looks visibly fuller as length is retained.*</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="sec compare">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">Why switch</p><h2>La Poción vs <em>the drugstore</em></h2></div>
+    <table>
+      <thead><tr><th>What matters</th><th class="hl">La Poción</th><th>Drugstore brand</th><th>Salon treatment</th></tr></thead>
+      <tbody>
+        <tr><td>Ancestral plant actives</td><td class="hl yes">✓</td><td class="no">✕</td><td class="yes">✓</td></tr>
+        <tr><td>Sulfate &amp; silicone free</td><td class="hl yes">✓</td><td class="no">✕</td><td class="yes">✓</td></tr>
+        <tr><td>Strengthens to reduce breakage</td><td class="hl yes">✓</td><td class="no">✕</td><td class="yes">✓</td></tr>
+        <tr><td>Done at home</td><td class="hl yes">✓</td><td class="yes">✓</td><td class="no">✕</td></tr>
+        <tr><td>Cost per ritual</td><td class="hl">~$20</td><td>~$12</td><td>$150+</td></tr>
+        <tr><td>30-day money-back</td><td class="hl yes">✓</td><td class="no">✕</td><td class="no">✕</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">★★★★★ 12,000+ reviews</p><h2>You're not alone. <em>Look at this hair.</em></h2></div>
+    <div class="testi-grid">
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"My hair was straw after years of bleach. Two weeks with the 5-piece ritual and people keep asking what I did. I cried, honestly."</p><div class="who"><div class="av">D</div><div><b>Daniela R.</b><small>Miami, FL · Verified</small></div></div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"My hair finally stopped snapping off every wash. It actually looks fuller and longer now. The Strength &amp; Growth kit is the one."</p><div class="who"><div class="av">M</div><div><b>Marisol T.</b><small>Houston, TX · Verified</small></div></div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"Bath time used to be a battle. The Kids kit detangles my daughter's hair with zero tears. Worth every penny."</p><div class="who"><div class="av">J</div><div><b>Jenny P.</b><small>Newark, NJ · Verified</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">Questions</p><h2>The stuff you're <em>wondering</em></h2></div>
+    <div class="faq">
+      <details><summary>Is this the real La Poción from Colombia?</summary><p>Yes, 100% authentic. Every kit is imported directly from Colombia: the exact same formulas you'd buy there, brought in by us as the exclusive US distributor and shipped fast and fresh from a US warehouse.</p></details>
+      <details><summary>Will this actually help my hair grow?</summary><p>La Poción is a cosmetic hair-care ritual. It strengthens the strand and helps reduce breakage, and because breakage is the #1 reason hair never seems to get longer, most people retain more length and see fuller, healthier-looking hair over time. It is not a drug and is not intended to treat hair-loss conditions; individual results vary.</p></details>
+      <details><summary>How fast will I see results?</summary><p>Most people feel softer, shinier hair from the very first wash. By week one, 93% report visibly less breakage and frizz. If you don't love it in 30 days, we'll refund you.</p></details>
+      <details><summary>Which ritual is right for me?</summary><p>Damaged/over-processed → 5-Piece Deep Repair. Strength + length retention → 4-Piece Strength &amp; Growth. Curls &amp; coils → Tongolé. Pure shine → B8. Little ones → Kids Tangle-Free.</p></details>
+      <details><summary>Are the formulas clean?</summary><p>Yes. Sulfate-free, silicone-free, cruelty-free, and built on Colombian plant botanicals. Gentle enough for color-treated hair and kids.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>Your best hair is <em>one ritual away.</em></h2>
+    <p>Join 50,000+ who stopped fighting their hair and started loving it. Backed by a 30-day money-back guarantee.</p>
+    <a href="#kits" class="btn gold">Shop the Rituals</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="font-family:'Fraunces';font-weight:800;font-size:1.6rem">La Poción<span> ∞</span></div>
+        <p style="margin-top:8px;max-width:34ch">Colombia's #1 hair ritual, now shipping across the USA. Made with love. 🇨🇴</p>
+      </div>
+      <div class="foot-col"><h5>Shop</h5><a href="#kit-5">Deep Repair</a><a href="#kit-4">Strength &amp; Growth</a><a href="#kit-t">Tongolé Curls</a><a href="#kit-b8">B8 Infinite Shine</a><a href="#kit-k">Kids Tangle-Free</a></div>
+      <div class="foot-col"><h5>Help</h5><a href="#faq">FAQ</a><a href="#">Shipping &amp; Returns</a><a href="#">Track My Order</a><a href="#">Contact Us</a></div>
+      <div class="foot-col"><h5>Brand</h5><a href="#science">Ingredients</a><a href="#results">Results</a><a href="#">Our Story</a></div>
+    </div>
+    <p class="disclaimer">*Based on a consumer-use survey; individual results vary. La Poción products are cosmetics intended to cleanse, condition and improve the appearance of hair. Statements on this page have not been evaluated by the U.S. Food &amp; Drug Administration and are not intended to diagnose, treat, cure, or prevent any disease or medical condition, including hair loss. "Growth," "fuller," and "stronger" refer to the cosmetic appearance of hair and to length retained by reducing breakage.</p>
+    <div class="foot-bottom">
+      <span>© 2026 La Poción USA · Authorized US Distributor.</span>
+      <span>Privacy · Terms · Pricing matches Amazon.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE BUY BAR -->
+<div class="mbar" id="mbar">
+  <div class="mp">$99.99<small>5-Piece Deep Repair</small></div>
+  <a href="#kit-5" class="btn buy">Shop Best-Seller</a>
+</div>
+
+<script>
+function track(ev,data){ if(window.fbq){ fbq('track',ev,data); } console.log('[track]',ev,data); }
+document.querySelectorAll('.btn.buy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var kit=b.dataset.kit, price=parseFloat(b.dataset.price), id=b.dataset.id;
+    track('AddToCart',{content_name:kit,content_ids:[id],value:price,currency:'USD',content_type:'product'});
+    track('InitiateCheckout',{content_name:kit,content_ids:[id],value:price,currency:'USD'});
+    // TODO: route to live Shopify checkout for this product
+    window.location.href = '#kits';
+  });
+});
+var seen={};
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.classList.add('in');
+    var btn=e.target.querySelector('.btn.buy');
+    if(btn&&!seen[btn.dataset.id]){seen[btn.dataset.id]=1;
+      track('ViewContent',{content_name:btn.dataset.kit,content_ids:[btn.dataset.id],value:parseFloat(btn.dataset.price),currency:'USD'});}}
+});},{threshold:.18});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+var mbar=document.getElementById('mbar'),heroEl=document.querySelector('.hero');
+new IntersectionObserver(function(es){mbar.classList.toggle('show',!es[0].isIntersecting);},{threshold:0}).observe(heroEl);
+track('PageView',{page:'lapocion-listicle'});
+</script>
+</body>
+</html>
