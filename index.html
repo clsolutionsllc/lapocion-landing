@@ -487,6 +487,18 @@ footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;f
   padding:13px 22px;border-radius:100px;font-weight:700;font-size:.9rem;z-index:140;opacity:0;pointer-events:none;
   transition:.3s;box-shadow:var(--shadow);border:1px solid var(--gold)}
 .toast.show{opacity:1;transform:translateX(-50%)}
+
+/* ===== Mobile optimization fixes ===== */
+@media(max-width:560px){
+  .compare .wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .compare table{font-size:.7rem}
+  .compare th,.compare td{padding:8px 5px}
+  .compare thead th{font-size:.62rem;letter-spacing:.01em}
+  .compare td:first-child{font-size:.7rem}
+}
+@media(max-width:680px){.foot-grid{grid-template-columns:1fr 1fr;gap:26px 20px}.foot-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:380px){.foot-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.mbar-parts{display:none}}
 </style>
 </head>
 <body>
