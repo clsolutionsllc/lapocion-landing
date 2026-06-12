@@ -5,3 +5,6 @@ Thumbs.db
 # Image working backups / regeneration scratch (not needed to render the site)
 images/lux/old/
 images/lux/old2/
+
+# Original PNGs kept locally as backup (WebP served)
+images/lux/_png-orig/

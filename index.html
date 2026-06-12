@@ -541,7 +541,7 @@ footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;f
       </div>
     </div>
     <div class="hero-banner">
-      <img src="images/lux/all-products.png?v=4" alt="The full La Poción collection on marble">
+      <img src="images/lux/all-products.webp?v=4" alt="The full La Poción collection on marble">
     </div>
   </div>
 </section>
@@ -640,7 +640,7 @@ footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;f
       <!-- KIT 1 -->
       <article class="kit reveal" id="kit-5">
         <div class="kit-media"><div class="kit-badge">★ Best-Seller</div>
-          <img src="images/lux/kit-5piece.png" alt="5-Piece Deep Repair Ritual"></div>
+          <img src="images/lux/kit-5piece.webp" loading="lazy" alt="5-Piece Deep Repair Ritual"></div>
         <div class="kit-body">
           <span class="kit-tagline">the complete ritual</span>
           <h3>5-Piece Deep Repair</h3>
@@ -671,7 +671,7 @@ footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;f
       <!-- KIT 2 -->
       <article class="kit reveal" id="kit-4">
         <div class="kit-media"><div class="kit-badge">Strength &amp; Growth</div>
-          <img src="images/lux/kit-4piece.png" alt="4-Piece Strength & Growth Ritual"></div>
+          <img src="images/lux/kit-4piece.webp" loading="lazy" alt="4-Piece Strength & Growth Ritual"></div>
         <div class="kit-body">
           <span class="kit-tagline">strength &amp; growth</span>
           <h3>4-Piece Strength &amp; Growth</h3>
@@ -702,7 +702,7 @@ footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;f
       <!-- KIT 3 -->
       <article class="kit reveal" id="kit-t">
         <div class="kit-media"><div class="kit-badge">Curls' Best Friend</div>
-          <img src="images/lux/kit-tongole.png" alt="Tongolé Curl Reconstruction Ritual"></div>
+          <img src="images/lux/kit-tongole.webp" loading="lazy" alt="Tongolé Curl Reconstruction Ritual"></div>
         <div class="kit-body">
           <span class="kit-tagline">for defined curls</span>
           <h3>Tongolé Curl Ritual</h3>
@@ -733,7 +733,7 @@ footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;f
       <!-- KIT 4 -->
       <article class="kit reveal" id="kit-b8">
         <div class="kit-media"><div class="kit-badge">Glass-Hair Glow</div>
-          <img src="images/lux/kit-b8.png" alt="B8 Infinite Shine Ritual"></div>
+          <img src="images/lux/kit-b8.webp" loading="lazy" alt="B8 Infinite Shine Ritual"></div>
         <div class="kit-body">
           <span class="kit-tagline">infinite shine</span>
           <h3>B8 Infinite Shine</h3>
@@ -764,7 +764,7 @@ footer{background:var(--grape);color:rgba(255,255,255,.72);padding:54px 0 32px;f
       <!-- KIT 5 -->
       <article class="kit reveal" id="kit-k">
         <div class="kit-media"><div class="kit-badge">Tear-Free</div>
-          <img src="images/lux/kit-kids.png" alt="Kids Tangle-Free Ritual"></div>
+          <img src="images/lux/kit-kids.webp" loading="lazy" alt="Kids Tangle-Free Ritual"></div>
         <div class="kit-body">
           <span class="kit-tagline">for the little ones</span>
           <h3>Kids Tangle-Free</h3>
@@ -1042,7 +1042,7 @@ function track(ev,data){ if(window.fbq){ fbq('track',ev,data); } console.log('[t
 /* ===================== CART + UPSELLS ===================== */
 var SHIP_FREE=50;
 var IMG={
-  'B0DSGYPPD7':'images/lux/kit-5piece.png','B0DCYQV7XJ':'images/lux/kit-4piece.png','B0DCZ1SLJK':'images/lux/kit-tongole.png','B0DCZ64HBD':'images/lux/kit-b8.png','B0FV7VB3TW':'images/lux/kit-kids.png',
+  'B0DSGYPPD7':'images/lux/kit-5piece.webp','B0DCYQV7XJ':'images/lux/kit-4piece.webp','B0DCZ1SLJK':'images/lux/kit-tongole.webp','B0DCZ64HBD':'images/lux/kit-b8.webp','B0FV7VB3TW':'images/lux/kit-kids.webp',
   'ADDON-BOOSTER':'images/upsell/booster.webp','ADDON-TERMO':'images/upsell/termoprotector.webp','ADDON-OIL':'images/upsell/b8oil.png','ADDON-R3START':'images/upsell/r3start.png'
 };
 var ADDONS=[
@@ -1064,7 +1064,7 @@ function closeCart(){cartEl.classList.remove('show');cartOv.classList.remove('sh
 function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('show');},2200);}
 function addToCart(id,name,price,sub){
   var ex=cart.find(function(i){return i.id===id;});
-  if(ex){ex.qty++;} else {cart.push({id:id,name:name,sub:sub||'',price:price,qty:1,img:IMG[id]||'images/lux/kit-5piece.png'});}
+  if(ex){ex.qty++;} else {cart.push({id:id,name:name,sub:sub||'',price:price,qty:1,img:IMG[id]||'images/lux/kit-5piece.webp'});}
   track('AddToCart',{content_name:name,content_ids:[id],value:price,currency:'USD',content_type:'product'});
   renderCart();
 }
